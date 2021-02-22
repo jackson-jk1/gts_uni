@@ -16,35 +16,15 @@ public class GFT_EX {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Produto banana = new Produto(); 
-        Produto energetico = new Produto();  
-        Produto arroz = new Produto();  
-        Produto chocolate = new Produto();  
-        Produto leite = new Produto();  
-        Produto abacaxi = new Produto();  
+        Produto banana = new Produto("banana",0.99,2); 
+        Produto energetico = new Produto("energetico",5.49,3);  
+        Produto arroz = new Produto("arroz",20,1);  
+        Produto chocolate = new Produto("chocolate",4.50,1);  
+        Produto leite = new Produto("leite",3.73,3);  
+        Produto abacaxi = new Produto("abacaxi",2.40,2);  
         Caixa caixa = new Caixa();
         
         
-        banana.setNome("banana");
-        banana.setTipo(2);
-        banana.setValor(0.99);
-        energetico.setNome("energetico");
-        energetico.setTipo(3);
-        energetico.setValor(5.49);
-        arroz.setNome("arroz");
-        arroz.setTipo(1);
-        arroz.setValor(20);
-        chocolate.setNome("chocolate");
-        chocolate.setTipo(1);
-        chocolate.setValor(4.50);
-        leite.setNome("leite");
-        leite.setTipo(3);
-        leite.setValor(3.73);
-        abacaxi.setNome("abacaxi");
-        abacaxi.setTipo(2);
-        abacaxi.setValor(2.40);
-        
-      caixa.calculaValorFinal(banana, 3);
        
       System.out.println("valor: " + caixa.calculaValorFinal(banana, 3));
       System.out.println("valor: " + caixa.calculaValorFinal(energetico, 7));

@@ -15,6 +15,15 @@ public class Produto {
     private int tipo;
 
     
+    public Produto(String nome, double valor, int tipo) {
+        this.nome = nome;
+        this.valor = valor;
+        this.tipo = tipo;
+    }
+
+    
+    
+    
     
     public Produto() {
     }
