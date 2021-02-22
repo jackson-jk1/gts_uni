@@ -5,14 +5,12 @@
  */
 package ex4;
 
-
-
 /**
  *
  * @author usuario
  */
-public class ICMS implements Imposto {
-   private double valor;
+public class IPI implements Imposto {
+private double valor;
 
     public double getValor() {
         return valor;
@@ -20,11 +18,12 @@ public class ICMS implements Imposto {
 
     @Override
     public void calculaImposto(double valor) {
-       this.valor = (valor * 30) / 100;
+     if (valor < 25000){
+     this.valor = (valor * 5) / 100;
+     }
+     if (valor >= 25000){
+     this.valor = (valor * 10) / 100;
+     }
     }
- 
-   
-  
- 
-      
+    
 }

@@ -9,7 +9,7 @@ package ex4;
  *
  * @author usuario
  */
-public interface Imposto {
+public interface Imposto   {
     
     public void calculaImposto(double valor);
 

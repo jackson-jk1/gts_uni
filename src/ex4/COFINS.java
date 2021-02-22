@@ -5,26 +5,26 @@
  */
 package ex4;
 
-
-
 /**
  *
  * @author usuario
  */
-public class ICMS implements Imposto {
-   private double valor;
+public class COFINS implements Imposto{
+    private double valor;
 
     public double getValor() {
         return valor;
     }
-
+    
     @Override
     public void calculaImposto(double valor) {
-       this.valor = (valor * 30) / 100;
+     if (valor > 12000)
+     {
+     this.valor = (valor * 8) / 100;
+     
+     }else{
+     
+     this.valor = 0;}
+    
     }
- 
-   
-  
- 
-      
 }
